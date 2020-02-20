@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Nocaute
+    </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="d-flex justify-content-center">Exercícios de knockoutJs</h1>
+        <p>First name: <strong data-bind="text: firstName">todo</strong></p>
+        <p>Last name: <strong data-bind="text: lastName">todo</strong></p>
+        <p>Age: <strong data-bind="text: age" >age</strong></p>
+<br>
+    <label>Name:  
+        <input type="text" data-bind="value: firstName">
+    </label>
+<br>
+      <label>Last Name:  
+            <input type="text" data-bind="value: lastName">
+      </label>
+<br>
+      <label>Full Name:  
+            <input type="text" data-bind="value: fullName">
+      </label>
+<br>    
+      <label>Age:  
+            <input type="text" data-bind="value: age">
+      </label>
+    
+<hr>
+
+<!--Example - values on table-->
+        <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td data-bind="text: firstName">todo</td>
+                    <td data-bind="text: lastName">todo</td>
+                    <td data-bind="text: age">age</td>
+                  </tr>
+                </tbody>
+              </table>
+<hr>
+              <button class="btn btn-primary" data-bind="click: clickButton">Ação</button>
+<hr>
+              <p>LISTA</p>
+    <ul class="list-group col-6" data-bind="foreach: list">
+        <li class="list-group-item" data-bind="text: $data"></li>
+    </ul>
+<br>
+<hr>
+<br>
+<label data-bind="text: labelText">label</label> 
+    <input type="text" data-bind="value: inputValue"/>
+<br>
+<hr>
+    <h1 class="d-flex justify-content-center" data-bind="text: computed()"></h1>
+<hr>
+
+
+    <script type='text/javascript' src='knockout-3.5.1.js'></script>
+    <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
